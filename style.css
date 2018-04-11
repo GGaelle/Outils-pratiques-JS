@@ -1,0 +1,88 @@
+/* Header */
+header {
+  background-color: #0a376f;
+  padding-top: 20px;
+  text-align:center;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 50px;
+  font-family: 'Courgette', cursive;
+  /*font-family: 'Pacifico', cursive;*/
+}
+
+/* Taux de change */
+.change {
+  background-color: #7F9AFF;
+  padding-top: 30px;
+  padding-bottom: 30px
+  text-align:center;
+}
+
+#box {
+  text-align: center;
+  width:400px;
+  height:250px;
+  margin: 50px 80px;
+  border:2px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  float: left;
+}
+h2 {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+table {
+  margin:50px auto;
+}
+
+
+
+/* Compteur de mots */
+#box2 {
+  text-align: center;
+  margin: 50px 80px;
+  border:2px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  float: right;
+}
+#box2 input {
+  margin-top: 15px;
+}
+#output{
+  margin: 30px auto;
+  width: 150px;
+  background: lightgreen;
+}
+#btn {
+  color: #fff;
+  background-color: blue;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* Calculatrice */
+#boxCalculator {
+  text-align: center;
+  border:2px solid black;
+  border-radius: 10px;
+  background-color: #003b88;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+.calculator input{
+  width: 90px;
+  height: 70px;
+  font-size: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #000;
+  color: #fff;
+}

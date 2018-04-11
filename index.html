@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <title>Outils pratiques</title>
+  </head>
+
+
+  <body>
+    <header>
+      <h1>Outils pratiques JavaScript</h1>
+    </header>
+
+    <!--Taux de change et compteur mots-->
+    <div class="container-fluid change">
+          <div class="row">
+
+            <!--Taux de change-->
+            <div id="box" class="col-md-6">
+
+              <h2>Taux de change</h1>
+              <table>
+
+                <tr>
+                  <td><input id="fromAmount" type="text" size="19" onkeyup="recupererValeur()"></td>
+                  <td><select id="from" onchange="recupererValeur()">
+                    <option value="EUR">Europe (EUR)</option>
+                    <option value="USD">Dollars US (USD)</option>
+                    <option value="JPY">Japanese Yen (JPY)</option>
+                    <option value="AUD">Dollar australien (AUD)</option>
+                    <option value="CHF">Franc Suisse (CHF)</option>
+                  </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><input id="toAmount" type="text" size="19" disabled></td>
+                  <td><select id="to" onchange="recupererValeur()">
+                    <option value="EUR">Europe (EUR)</option>
+                    <option value="USD">Dollars US (USD)</option>
+                    <option value="JPY">Japanese Yen (JPY)</option>
+                    <option value="AUD">Dollar australien (AUD)</option>
+                    <option value="CHF">Franc Suisse (CHF)</option>
+                  </select>
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+
+          <!--Compteur de mots-->
+          <div id="box2" class="col-md-6">
+              <h2>Type a word in the box below</h2>
+              <input id="str" type="text" value="">
+              <div id="output"></div>
+              <button id="btn"><h3>Click to calculate word length</h3></button>
+
+          </div>
+        </div>
+    </div>
+
+
+
+    <!--Calculatrice-->
+    <div class="container calculator">
+      <div class="row">
+        <div class="col-md-6">
+
+          <h2>Calculatrice</h1>
+          <div id="boxCalculator">
+
+
+              <form id="myform" name="calc">
+              <input name="display" style="width:430px; height:80px; text-align:center; background-color:#fff; color: #2d0306; margin-bottom:35px;"><br>
+              <input type="button" value="7" onclick="calc.display.value+='7'">
+              <input type="button" value="8" onclick="calc.display.value+='8'">
+              <input type="button" value="9" onclick="calc.display.value+='9'">
+              <input type="button" value="&#247;" onclick="calc.display.value+='/'" style="background-color:#63b43b; color:#000;"><br>
+              <input type="button" value="4" onclick="calc.display.value+='4'">
+              <input type="button" value="5" onclick="calc.display.value+='5'">
+              <input type="button" value="6" onclick="calc.display.value+='6'">
+              <input type="button" value="x" onclick="calc.display.value+='*'" style="background-color:#8d3adf; color:#000;"><br>
+              <input type="button" value="1" onclick="calc.display.value+='1'">
+              <input type="button" value="2" onclick="calc.display.value+='2'">
+              <input type="button" value="3" onclick="calc.display.value+='3'">
+              <input type="button" value="-" onclick="calc.display.value+='-'" style="background-color:#f2dc11; color:#000;"><br>
+              <input type="button" value="0" onclick="calc.display.value+='0'">
+              <input type="button" value="C" onclick="calc.display.value=' '" style="background-color:#ee3ea6; color:#000;">
+              <input type="button" value="=" onclick="calc.display.value=eval(calc.display.value)">
+              <input type="button" value="+" onclick="calc.display.value+='+'" style="background-color:#f4581e; color:#000;"><br>
+              </form>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!--script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="script.js">
+
+    </script>
+
+  </body>
+</html>
