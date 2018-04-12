@@ -21,7 +21,7 @@
 
   <body>
     <header>
-      <h1>Outils pratiques JavaScript</h1>
+      <h1>- Outils pratiques JavaScript -</h1>
     </header>
 
     <!--Taux de change et compteur mots-->
@@ -64,9 +64,10 @@
           <!--Compteur de mots-->
           <div id="box2" class="col-md-6">
               <h2>Compteur de mots</h2>
+              <p>Notez un mot ou une phrase ci-dessous et je vous donnerais le nombre de caractères inscrits</p>
               <input id="str" type="text" value="">
               <div id="output"></div>
-              <button id="btn"><h3>Calculer la longueur du mot</h3></button>
+              <button id="btn"><h3>Calculer la longueur</h3></button>
 
           </div>
         </div>
@@ -134,6 +135,7 @@
       </div>
     </div>
 
+
     <!--Horloge digitale-->
     <div class="container-fluid clock">
       <div class="col-md-12">
@@ -143,6 +145,24 @@
       </div>
     </div>
 
+
+    <!--Slider-->
+    <div class="container-fluid slider">
+      <div class="col-md-12">
+          <h2>Quelques clichés de motos</h2>
+          <br>
+          <br>
+          <div class="wrapper" style="max-width:1000px; position:relative">
+            <img class="mySlides" src="images/img2.jpg" style="width: 100%">
+            <img class="mySlides" src="images/img3.jpg" style="width: 100%">
+            <img class="mySlides" src="images/img4.JPG" style="width: 100%">
+
+          <a class="btnl" style="position:absolute; top:45%; left: 0" onclick="plusDivs(-1)"><span id="btnl">&lt;</span></a>
+          <a class="btnr" style="position:absolute; top:45%; right: 0" onclick="plusDivs(1)"><span id="btnr">&gt;</span></a>
+          </div>
+
+      </div>
+    </div>
 
 
     <!--script-->

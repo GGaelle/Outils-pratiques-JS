@@ -34,8 +34,7 @@ document.getElementById('btn').onclick = function(event){
   print(document.getElementById('str').value.length)
 }
 
-/* Horloge digitale */
-
+//Part Horloge digitale
 setInterval(function(){
   var currentTime = new Date();
   var hours = currentTime.getHours();
@@ -63,3 +62,46 @@ if (minutes < 10) {
 
 
 }, 1000);
+
+
+//Part formulaire de contact
+$(document).ready(function(){
+  function init() {
+    if (localStorage["name"]){
+      $('#name').val(localStorage["name"])
+    }
+    if (localStorage["email"]){
+      $('#email').val(localStorage["email"])
+    }
+    if (localStorage["message"]){
+      $('#message').val(localStorage["message"])
+    }
+  }
+  init();
+});
+
+$('.stored').change(function(){
+  localStorage[$(this).attr('name')] = $(this).val()
+
+});
+
+
+//Part Slider
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n)
+}
+
+function  showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName('mySlides')
+
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++){
+    x[i].style.display = "none"
+  }
+  x[slideIndex-1].style.display = "block"
+}
