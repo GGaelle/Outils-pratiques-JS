@@ -63,10 +63,10 @@
 
           <!--Compteur de mots-->
           <div id="box2" class="col-md-6">
-              <h2>Type a word in the box below</h2>
+              <h2>Compteur de mots</h2>
               <input id="str" type="text" value="">
               <div id="output"></div>
-              <button id="btn"><h3>Click to calculate word length</h3></button>
+              <button id="btn"><h3>Calculer la longueur du mot</h3></button>
 
           </div>
         </div>
@@ -106,13 +106,42 @@
           </div>
         </div>
 
-        <div class="col-md-6">
+        <!--Formulaire de contact-->
+        <div class="col-md-6 contact">
+            <h2>Formulaire de Contact</h2>
+            <form id="cf" method="post" action="">
 
+                <h3>Contactez moi</h3>
+                <fieldset>
+
+                  <label for="name">Nom</label>
+                  <input type="text" id="name" name="name" class="stored">
+
+                  <label for="mail">Email</label>
+                  <input type="text" id="email" name="email" class="stored">
+
+                  <label for="message">Message</label>
+                  <textarea type="text" id="message" name="message" class="stored"></textarea>
+
+                </fieldset>
+
+                  <button type="submit">Envoyer</button>
+                  <input id="clear" type="reset">
+
+            </form>
         </div>
 
       </div>
     </div>
 
+    <!--Horloge digitale-->
+    <div class="container-fluid clock">
+      <div class="col-md-12">
+          <h2>Horloge locale</h2>
+          <div id="clock"></div>
+
+      </div>
+    </div>
 
 
 
