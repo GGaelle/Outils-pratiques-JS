@@ -105,3 +105,23 @@ function  showDivs(n) {
   }
   x[slideIndex-1].style.display = "block"
 }
+
+
+//Part calcul mental
+var number1 = Math.floor((Math.random() * 100) + 1)
+  , number2 = Math.floor((Math.random() * 100) + 1)
+
+//on les place dans le HTML
+document.getElementById("number1").innerHTML = number1;
+document.getElementById("number2").innerHTML = number2;
+
+var boutonValiderLaRep = document.getElementById("btn5")
+
+boutonValiderLaRep.onclick = function() {
+  var repDuJoueur = document.getElementById("answer").value
+  if (number1 + number2 == repDuJoueur){
+    alert("Bravo c'est la bonne réponse")
+  } else {
+    alert("C'est faux, la réponse était " + repDuJoueur)
+  }
+}

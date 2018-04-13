@@ -222,9 +222,65 @@ label{
 img{
   height: 650px;
   margin-top: -20px;
-  margin-bottom: 50px;
+  margin-bottom: 120px;
 }
 
 .wrapper {
   margin:0 auto;
+  box-shadow: 3px 3px 2px #8d8b8f;
+}
+
+
+/* Calcul mental*/
+#wrapper {
+  width: 730px;
+  height: auto;
+  border:2px solid black;
+  border-radius: 10px;
+  background-color: #a8780d;
+  box-shadow: 3px 3px 2px #8d8b8f;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.groupe {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: "center"
+}
+#number1 {
+  font-size: 45px;
+  font-weight: bold;
+  border: 2px solid #09938e;
+  padding: 40px;
+  border-radius: 90px;
+  background-color: rgb(252, 252, 252, 0.3);
+  margin-right: 10px;
+}
+#number2 {
+  font-size: 45px;
+  font-weight: bold;
+  border: 2px solid #a800cc;
+  padding: 40px;
+  border-radius: 170px;
+  background-color: rgb(252, 252, 252, 0.3);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.td {
+  height: 10px
+}
+#answer{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#btn5 {
+  background-color: #0d1259;
+  color: #fff;
+  padding: 12px;
+  border-style: none;
+  font-weight: bold;
+  width: 100px;
+
 }
