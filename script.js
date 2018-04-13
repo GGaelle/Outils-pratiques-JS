@@ -125,3 +125,64 @@ boutonValiderLaRep.onclick = function() {
     alert("C'est faux, la réponse était " + repDuJoueur)
   }
 }
+
+
+// Part TodoList
+function getTodos(){
+  var todos = new Array
+    , todosStr = localStorage.getItem('todo')
+
+  if (todosStr !== null) {
+    todos = JSON.parse(todosStr)
+  }
+  return todos
+}
+
+function add() {
+  var task = document.getElementById('task').value
+    , todos = getTodos()
+
+  todos.push(task);
+  localStorage.setItem("todo", JSON.stringify(todos));
+
+  show();
+
+  return false;
+}
+
+function clearDefault(a){
+  if (a.defaultValue==a.value) {a.value=""}
+};
+
+function remove (){
+  var id = this.getAttribute('id')
+    , todos = getTodos()
+
+    todos.splice(id, 1);
+    localStorage.setItem("todo", JSON.stringify(todos));
+
+    show();
+
+    return false
+}
+
+function show(){
+  var todos = getTodos()
+    , html = "<ul>"
+
+    for (var i = 0; i<todos.length; i++) {
+      html += "<li>" + todos[i] + '<button class="remove" id="' + i + '">Effacer</button></li>'
+    }
+    html += "<ul>"
+
+document.getElementById('todos').innerHTML = html;
+
+  var buttons = document.getElementsByClassName('remove')
+
+for (var i = 0; i<buttons.length; i++){
+  buttons[i].addEventListener("click", remove)
+  };
+}
+
+document.getElementById('add').addEventListener("click", add);
+show()
