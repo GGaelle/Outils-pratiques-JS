@@ -156,8 +156,8 @@
             <img class="mySlides" src="images/img3.jpg" style="width: 100%">
             <img class="mySlides" src="images/img4.JPG" style="width: 100%">
 
-          <a class="btnl" style="position:absolute; top:45%; left: 0" onclick="plusDivs(-1)"><span id="btnl">&lt;</span></a>
-          <a class="btnr" style="position:absolute; top:45%; right: 0" onclick="plusDivs(1)"><span id="btnr">&gt;</span></a>
+          <a class="btnl" style="position:absolute; top:45%; left: -1.5%" onclick="plusDivs(-1)"><span id="btnl">&lt;</span></a>
+          <a class="btnr" style="position:absolute; top:45%; right: -1.5%" onclick="plusDivs(1)"><span id="btnr">&gt;</span></a>
           </div>
 
       </div>
@@ -165,31 +165,39 @@
 
 
     <!--Calcul mental-->
-    <div class="container slider">
-      <div class="col-md-6">
-        <div id="wrapper">
-          <br>
-              <h2>Un peu de calcul mental ?</h2>
-              <table class="groupe">
-                <tr>
-                    <td><div id="number1">1</div></td>
-                    <td><div style="font-size:45px; font-weight: bold;">+</div></td>
+    <div class="container truc">
+      <div class="row">
 
-                    <td><div id="number2">1</div></td>
-                    <td><div style="font-size:45px; font-weight: bold;">=</div></td>
+          <div class="col-md-8">
+            <div id="wrapper">
+              <br>
+                  <h2>Un peu de calcul mental ?</h2>
+                  <table class="groupe">
+                    <tr>
+                        <td><div id="number1">1</div></td>
+                        <td><div style="font-size:45px; font-weight: bold; color: #000;">+</div></td>
 
-                    <td><input id="answer" type="text" style="padding: 10px; border: 2px solid #14d2d5;"></td>
-                    <td><input id="btn5" type="button" value="check"></td>
-                </tr>
+                        <td><div id="number2">1</div></td>
+                        <td><div style="font-size:45px; font-weight: bold;color: #000;">=</div></td>
 
-              </table>
-          </div>
+                        <td><input id="answer" type="text" style="padding: 10px; border: 2px solid #14d2d5;"></td>
+                        <td><input id="btn5" type="button" value="check"></td>
+                    </tr>
+
+                  </table>
+              </div>
+            </div>
+
+            <!--todolist-->
+            <div class="col-md-4 todolist">
+                <h2>Liste des tâches <br>à réaliser aujourd'hui</h2>
+                <input id="task"><button id="add">Ajouter tâche</button>
+
+                <div id="todos"></div>
+
+
+            </div>
       </div>
-
-      <div class="col-md-5 col-md-offset-1">
-
-      </div>
-
     </div>
 
 

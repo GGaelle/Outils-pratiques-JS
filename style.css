@@ -46,6 +46,7 @@ h2 {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
   color: #000;
+  letter-spacing: 1px;
 }
 table {
   margin:50px auto;
@@ -141,6 +142,7 @@ p {
   background: #000;
   border-radius: 15px;
   box-shadow: 3px 3px 2px #8d8b8f;
+  margin-bottom: 120px;
 
 }
 .contact h3 {
@@ -232,15 +234,19 @@ img{
 
 
 /* Calcul mental*/
+.truc {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-left: -80px
+}
 #wrapper {
-  width: 730px;
+  width: 60%;
   height: auto;
   border:2px solid black;
   border-radius: 10px;
-  background-color: #a8780d;
+  background-color: rgb(0, 123, 170);
   box-shadow: 3px 3px 2px #8d8b8f;
-  margin-top: 50px;
-  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -252,11 +258,12 @@ img{
 #number1 {
   font-size: 45px;
   font-weight: bold;
-  border: 2px solid #09938e;
+  border: 2px solid #d0c536;
   padding: 40px;
   border-radius: 90px;
   background-color: rgb(252, 252, 252, 0.3);
   margin-right: 10px;
+  color: #000;
 }
 #number2 {
   font-size: 45px;
@@ -264,12 +271,14 @@ img{
   border: 2px solid #a800cc;
   padding: 40px;
   border-radius: 170px;
-  background-color: rgb(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
   margin-right: 10px;
   margin-left: 10px;
+  color: #000;
 }
 .td {
   height: 10px
+  color: #000;
 }
 #answer{
   margin-right: 10px;
@@ -282,5 +291,44 @@ img{
   border-style: none;
   font-weight: bold;
   width: 100px;
+}
 
+/* TodoList */
+#add {
+  background-color: #388340;
+  color: #fff;
+  padding: 10px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  text-align: center;
+}
+.remove {
+  margin-top: 13px;
+  background-color: #f2f205;
+  float: right;
+  clear: both;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.todolist {
+  width:530px;
+  background-color: #0b993c;
+  padding: 10px 50px 30px 50px;
+  border-radius: 25px;
+  border:2px solid black;
+  box-shadow: 3px 3px 2px #8d8b8f;
+  text-align: center;
+  margin-bottom: 50px
+}
+ul {
+  list-style: none;
+  text-align: left;
+  line-height: 35px;
+}
+#task {
+  width:300px;
+  height: 30px;
+  margin-left: 17px;
+  margin-top: 30px;
 }
